@@ -3,22 +3,17 @@ node_js:
   - stable
 
 install:
+  - npm i -g typescript typings
   - npm install
 
 before_script:
-  - npm i -g typescript typings
-  - npm install
   - npm run build
 
 script:
   - npm test
 
-before_deploy:
-  - npm i -g typescript typings
-  - npm install
-  - npm run build
-
 deploy:
+  skip_cleanup: true
   provider: npm
   email: julien.sarazin@me.com
   api_key:
