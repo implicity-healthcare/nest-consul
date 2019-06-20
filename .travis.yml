@@ -1,10 +1,14 @@
 language: node_js
 node_js:
 - stable
-install:
-- npm install
+
+before_script:
+  - npm install
+  - npm run build
+
 script:
-- npm test
+  - npm test
+
 deploy:
   provider: npm
   email: julien.sarazin@me.com
