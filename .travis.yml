@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- stable
+  - stable
 
 before_script:
   - npm i -g typescript typings
@@ -9,6 +9,11 @@ before_script:
 
 script:
   - npm test
+
+before_deploy:
+  - npm i -g typescript typings
+  - npm install
+  - npm run build
 
 deploy:
   provider: npm
