@@ -3,6 +3,7 @@ node_js:
 - stable
 
 before_script:
+  - npm i -g typescript typings
   - npm install
   - npm run build
 
