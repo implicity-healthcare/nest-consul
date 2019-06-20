@@ -1,6 +1,6 @@
 {
-  "name": "nconsul",
-  "version": "0.0.0",
+  "name": "@implicity/nest-consul",
+  "version": "0.0.1",
   "description": "description",
   "author": "",
   "license": "MIT",
